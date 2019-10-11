@@ -9,7 +9,7 @@ public class Person {
         public void main(String[] args) {
             Person person1 = new Person("Мария", "Иванова", 361211122);
             System.out.println(person1);
-            Person person2 = new Person("Алексей","Петров");
+            Person person2 = new Person("Алексей", "Петров");
             person2 = new Person(362222222);
             Person person3 = new Person();
             person3.setFirstName("Алина");
