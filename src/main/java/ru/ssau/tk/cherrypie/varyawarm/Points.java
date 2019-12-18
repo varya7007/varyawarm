@@ -30,6 +30,16 @@ public class Points {
         return point.length(point);
     }
 
+    public static Point opposite(Point point) {
+        Point oppositePoint = new Point(-point.x, -point.y, -point.z);
+        return oppositePoint;
+    }
+
+    public static Point inverse(Point point) {
+        Point inversePoint = new Point(1 / point.x, 1 / point.y, 1 / point.z);
+        return inversePoint;
+    }
+
     private Points() {
     }
 }
