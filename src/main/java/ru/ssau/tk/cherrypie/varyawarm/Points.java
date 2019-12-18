@@ -40,6 +40,20 @@ public class Points {
         return inversePoint;
     }
 
+    public double scalarProduct(Point firstPoint, Point secondPoint, Point thirdPoint, Point fourthPoint) { /* считаем, что нужно найти произведения радиус-векторов*/
+        Point firstVectorCoordinate = new Point(secondPoint.x - firstPoint.x, secondPoint.y - firstPoint.y, secondPoint.z - firstPoint.z);
+        Point secondVectorCoordinate = new Point(fourthPoint.x - thirdPoint.x, fourthPoint.y - thirdPoint.y, fourthPoint.z - thirdPoint.z);
+        double scalarProd = firstVectorCoordinate.x * secondVectorCoordinate.x + firstVectorCoordinate.y * secondVectorCoordinate.y + firstVectorCoordinate.z * secondVectorCoordinate.z;
+        return scalarProd;
+    }
+
+    public Point vectorProduct(Point firstPoint, Point secondPoint, Point thirdPoint, Point fourthPoint) {
+        Point firstVectorCoordinate = new Point(secondPoint.x - firstPoint.x, secondPoint.y - firstPoint.y, secondPoint.z - firstPoint.z);
+        Point secondVectorCoordinate = new Point(fourthPoint.x - thirdPoint.x, fourthPoint.y - thirdPoint.y, fourthPoint.z - thirdPoint.z);
+        Point vectorProd = new Point(firstVectorCoordinate.y * secondVectorCoordinate.z - firstVectorCoordinate.z * secondVectorCoordinate.y, firstVectorCoordinate.z * secondVectorCoordinate.x - firstVectorCoordinate.x * secondVectorCoordinate.z, firstVectorCoordinate.x * secondVectorCoordinate.y - firstVectorCoordinate.y * secondVectorCoordinate.x);
+        return vectorProd;
+    }
+
     private Points() {
     }
 }
