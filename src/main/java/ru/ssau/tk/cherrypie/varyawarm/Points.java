@@ -26,6 +26,10 @@ public class Points {
         return enlargePoint;
     }
 
+    public static double length(Point point) {
+        return point.length(point);
+    }
+
     private Points() {
     }
 }
