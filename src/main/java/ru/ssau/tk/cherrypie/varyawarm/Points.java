@@ -1,6 +1,6 @@
 package ru.ssau.tk.cherrypie.varyawarm;
 
-public class Points{
+public class Points {
     public static Point sum(Point point1, Point point2) {
         Point sumPoint = new Point(point1.x + point2.x, point1.y + point2.y, point1.z + point2.z);
         return sumPoint;
@@ -19,6 +19,11 @@ public class Points{
     public static Point divide(Point point1, Point point2) {
         Point dividePoint = new Point(point1.x / point2.x, point1.y / point2.y, point1.z / point2.z);
         return dividePoint;
+    }
+
+    public Point enlarge(Point point, double num) {
+        Point enlargePoint = new Point(point.x * num, point.y * num, point.z * num);
+        return enlargePoint;
     }
 
     private Points() {
