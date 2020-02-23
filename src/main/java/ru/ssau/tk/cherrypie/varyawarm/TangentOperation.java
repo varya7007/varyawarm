@@ -7,3 +7,5 @@ public class TangentOperation extends Operation {
         return Math.tan(number);
     }
 }
+
+
