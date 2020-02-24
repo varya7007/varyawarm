@@ -9,14 +9,24 @@ public class PartString {
 
     static void Task2(String string) {
         byte[] bytes = string.getBytes();
-        for (byte byt: bytes) {
+        for (byte byt : bytes) {
             System.out.println(byt);
         }
     }
-    static void Task3(){
+
+    static void Task3() {
         String string = "symbolzzzzzz";
         String string1 = new String(string);
-        System.out.println(string==string1); //сравнивает ссылки
+        System.out.println(string == string1); //сравнивает ссылки
         System.out.println(string.equals(string1)); //сравнивает пул
+    }
+
+    static boolean Task4(String string) {
+        for (int i = 0; i < string.length(); i++) {
+            if (string.charAt(i) == string.charAt(string.length() - i - 1)) {
+                return true;
+            }
+        }
+        return false;
     }
 }
