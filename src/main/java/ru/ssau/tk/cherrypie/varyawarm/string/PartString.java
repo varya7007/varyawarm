@@ -30,7 +30,7 @@ public class PartString {
         return false;
     }
 
-    static int Task6(String string, String string1) {
+    static int Task7(String string, String string1) {
         if (string.contains(string1)) {
             return string.indexOf(string1);
         }

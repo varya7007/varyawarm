@@ -29,9 +29,9 @@ public class PartStringTest {
     }
 
     @Test
-    public void testTask6() {
-        assertEquals(PartString.Task6("abcd", "bc"), 1);
-        assertEquals(PartString.Task6("abcd", "cd"), 2);
-        assertEquals(PartString.Task6("abcd", "fff"), -1);
+    public void testTask7() {
+        assertEquals(PartString.Task7("abcd", "bc"), 1);
+        assertEquals(PartString.Task7("abcd", "cd"), 2);
+        assertEquals(PartString.Task7("abcd", "fff"), -1);
     }
 }
