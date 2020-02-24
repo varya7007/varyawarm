@@ -2,8 +2,7 @@ package ru.ssau.tk.cherrypie.varyawarm.string;
 
 import org.testng.annotations.Test;
 
-import static org.testng.Assert.assertFalse;
-import static org.testng.Assert.assertTrue;
+import static org.testng.Assert.*;
 
 public class PartStringTest {
     private String string = "символы symbols";
@@ -27,5 +26,12 @@ public class PartStringTest {
     public void testTask4() {
         assertTrue(PartString.Task4("jrj"));
         assertFalse(PartString.Task4("sfdf"));
+    }
+
+    @Test
+    public void testTask6() {
+        assertEquals(PartString.Task6("abcd", "bc"), 1);
+        assertEquals(PartString.Task6("abcd", "cd"), 2);
+        assertEquals(PartString.Task6("abcd", "fff"), -1);
     }
 }

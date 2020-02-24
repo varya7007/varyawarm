@@ -29,4 +29,14 @@ public class PartString {
         }
         return false;
     }
+
+    static int Task6(String string, String string1) {
+        if (string.contains(string1)) {
+            return string.indexOf(string1);
+        }
+        if (string1.contains(string)) {
+            return string1.indexOf(string);
+        } else
+            return -1;
+    }
 }
