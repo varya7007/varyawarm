@@ -39,4 +39,16 @@ public class PartString {
         } else
             return -1;
     }
+
+    static int Task8(String string, String string1) {
+        if (string.contains(string1)) {
+            return string.indexOf(string1, string.length() / 2);
+        }
+        if (string1.contains(string)) {
+            return string1.indexOf(string, string1.length() / 2);
+        } else
+            return -1;
+    }
+
+
 }

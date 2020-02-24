@@ -34,4 +34,11 @@ public class PartStringTest {
         assertEquals(PartString.Task7("abcd", "cd"), 2);
         assertEquals(PartString.Task7("abcd", "fff"), -1);
     }
+
+    @Test
+    public void testTask8() {
+        assertEquals(PartString.Task8("abcdef", "de"), 3);
+        assertEquals(PartString.Task8("abcd", "cd"), 2);
+        assertEquals(PartString.Task8("abcd", "ab"), -1);
+    }
 }
