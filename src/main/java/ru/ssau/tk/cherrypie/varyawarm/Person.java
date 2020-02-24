@@ -4,6 +4,8 @@ public class Person {
     private String firstName;
     private String lastName;
     private int passportId;
+    private Gender gender;
+
 
     class DataList {
         public void main(String[] args) {
@@ -16,6 +18,14 @@ public class Person {
             person3.setLastName("Васильева");
             person3.setPassportId(361132366);
         }
+    }
+
+    Gender getGender() {
+        return gender;
+    }
+
+    void setGender(Gender gender) {
+        this.gender = gender;
     }
 
     String getFirstName() {
@@ -45,6 +55,10 @@ public class Person {
     public Person() {
     }
 
+    public Person(Gender gender) {
+        this.gender = gender;
+    }
+
     public Person(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -59,4 +73,5 @@ public class Person {
         this.lastName = lastName;
         this.passportId = passportId;
     }
+
 }
