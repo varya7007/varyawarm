@@ -1,4 +1,4 @@
-package ru.ssau.tk.cherrypie.varyawarm.arrays;
+package ru.ssau.tk.cherrypie.varyawarm.Arrays;
 
 public class Array {
 

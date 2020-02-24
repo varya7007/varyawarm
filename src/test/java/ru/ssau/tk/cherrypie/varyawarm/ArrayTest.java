@@ -1,6 +1,7 @@
-package ru.ssau.tk.cherrypie.varyawarm.arrays;
+package ru.ssau.tk.cherrypie.varyawarm;
 
 import org.testng.annotations.Test;
+import ru.ssau.tk.cherrypie.varyawarm.Arrays.Array;
 
 import static org.testng.Assert.*;
 

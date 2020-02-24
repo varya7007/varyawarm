@@ -1,10 +1,10 @@
-package ru.ssau.tk.cherrypie.varyawarm;
+package ru.ssau.tk.cherrypie.varyawarm.Person;
 
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertNull;
-import static ru.ssau.tk.cherrypie.varyawarm.Gender.FEMALE;
+import static ru.ssau.tk.cherrypie.varyawarm.Person.Gender.FEMALE;
 
 public class PersonTest {
     private Person person1 = new Person();

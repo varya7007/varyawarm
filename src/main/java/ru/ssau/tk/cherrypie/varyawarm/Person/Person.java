@@ -1,4 +1,4 @@
-package ru.ssau.tk.cherrypie.varyawarm;
+package ru.ssau.tk.cherrypie.varyawarm.Person;
 
 public class Person {
     private String firstName;
