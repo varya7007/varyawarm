@@ -48,4 +48,17 @@ public class PartStringTest {
         assertEquals(PartString.Task9("abcd", "cd"), 2);
         assertEquals(PartString.Task9("abcd", "ff"), -1);
     }
+
+    @Test
+    public void testTask10() {
+        String[] strings = new String[]{
+                "abcdefg",
+                "abcdefg",
+                "ibcdllg",
+                "abcdefj"
+        };
+        String pref = "a";
+        String post = "fg";
+        assertEquals(PartString.Task10(strings,pref,post),2);
+    }
 }

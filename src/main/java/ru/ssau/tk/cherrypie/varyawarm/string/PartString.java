@@ -60,4 +60,13 @@ public class PartString {
             return -1;
     }
 
+    static int Task10(String[] strings, String pref, String post) {
+        int count = 0;
+        for (String string : strings) {
+            if (string.startsWith(pref) && (string.endsWith(post))) {
+                count++;
+            }
+        }
+        return count;
+    }
 }
