@@ -50,5 +50,14 @@ public class PartString {
             return -1;
     }
 
+    static int Task9(String string, String string1) {
+        if (string.contains(string1)) {
+            return string.lastIndexOf(string1);
+        }
+        if (string1.contains(string)) {
+            return string1.lastIndexOf(string);
+        } else
+            return -1;
+    }
 
 }
