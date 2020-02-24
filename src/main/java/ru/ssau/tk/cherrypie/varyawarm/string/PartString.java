@@ -13,4 +13,10 @@ public class PartString {
             System.out.println(byt);
         }
     }
+    static void Task3(){
+        String string = "symbolzzzzzz";
+        String string1 = new String(string);
+        System.out.println(string==string1); //сравнивает ссылки
+        System.out.println(string.equals(string1)); //сравнивает пул
+    }
 }

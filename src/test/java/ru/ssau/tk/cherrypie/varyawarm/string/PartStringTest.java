@@ -16,4 +16,9 @@ public class PartStringTest {
     public void testTask2() {
         PartString.Task2(string);
     }
+
+    @Test
+    public void testTask3() {
+        PartString.Task3();
+    }
 }
