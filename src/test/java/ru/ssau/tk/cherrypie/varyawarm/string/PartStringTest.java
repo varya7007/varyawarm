@@ -61,4 +61,9 @@ public class PartStringTest {
         String post = "fg";
         assertEquals(PartString.Task10(strings,pref,post),2);
     }
+
+    @Test
+    public void testTask12() {
+        assertEquals(PartString.Task12("kjkjkjkj","kj","i"),"iiii");
+    }
 }

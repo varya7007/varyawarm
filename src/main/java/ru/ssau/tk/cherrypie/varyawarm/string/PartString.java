@@ -69,4 +69,12 @@ public class PartString {
         }
         return count;
     }
+
+    static String Task12(String firstStr, String secondSrt, String thirdStr) {
+        for (int i = 0; i < 100; i++) {
+            if (firstStr.contains(secondSrt)) {
+                firstStr.replaceAll(secondSrt, thirdStr);
+            } else return firstStr;
+        }
+        return firstStr;    }
 }
